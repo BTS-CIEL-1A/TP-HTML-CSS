@@ -1,2 +1,2 @@
-J'apprend Git et GitHUB
-je decouvre la gestion de version
+git test
+je decouvre la gest des versions.
