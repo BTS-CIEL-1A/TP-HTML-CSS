@@ -34,13 +34,6 @@ Ce site pédagogique permet de découvrir les principales notions du développem
 - Captures d'écran agrandissables au clic.
 - Liens vers des ressources de documentation et de validation W3C.
 
-## Ouvrir le site
-
-1. Télécharger le dépôt ou le cloner avec Git.
-2. Ouvrir le dossier du projet dans **Visual Studio Code**.
-3. Ouvrir le fichier `index.html` dans un navigateur.
-4. Utiliser les outils de développement du navigateur (`F12`) pour explorer le HTML, le CSS et l'affichage responsive.
-
 ## Technologies utilisées
 
 - **HTML5** pour la structure des pages.
@@ -48,9 +41,18 @@ Ce site pédagogique permet de découvrir les principales notions du développem
 - **JavaScript** pour les interactions (menu, accordéons et autres fonctions du site, selon leur implémentation).
 - **Visual Studio Code** comme éditeur de code.
 
+## Énoncé du TP
+
+Vous disposez de 5h pour réaliser un site web statique (donc HTML seul) sur le sujet de votre choix.
+
+Seules contraintes :
+
+— que votre site soit publié
+
+— qu’il soit conforme
+
 ---
 
 <div align="center">
   <sub>Projet pédagogique — HTML5 • CSS3 • Visual Studio Code</sub>
 </div>
-
