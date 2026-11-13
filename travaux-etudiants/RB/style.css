@@ -1,0 +1,350 @@
+html, body{
+  background-color: #111;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+    color: #CC0000;
+    text-align: center;
+    font-family: Oswald;
+    font-size: 80px;
+
+    background-image: url("https://media.gqmagazine.fr/photos/6384cd847d94403f608a6080/16:9/w_2560,c_limit/GQ_Hype_MOTY_2022_SCH-Cover.jpg");
+
+    background-size: cover;
+    background-position: center 30%;
+    background-repeat: no-repeat;
+
+    height: 160px;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titreacceuil
+{
+    color: #CC0000;
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #CC0000;
+    padding-bottom: 15px;
+}
+
+.acc
+{
+      max-width: 900px;
+    margin: 40px auto;
+    padding: 0 30px;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+    margin: 30px;
+}
+
+.bouton1, .bouton2, .bouton3 {
+    font-size:33px;
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+
+    width: 400px;
+    height: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+}
+.bouton1 {
+    background-image: url("https://media-mcetv.ouest-france.fr/wp-content/uploads/2025/07/SCH-prepare-lalbum-dune-generation-succes-garanti-aupres-de-la-jeunesse.jpg");
+}
+
+.bouton2 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGj9E5rHupfLYrpPhQF9mMsDQ_qiHpvsxenasDxhZ0wA&s=10");
+}
+
+.bouton3 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBiqwRdP-zolbnWzVi6yIjm2j6rIXTx26eRbBq3qGISA&s=10");
+}
+.txtacceuil{
+    color: #ddd;
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 25px; 
+}
+
+.titrestory {
+    color: #CC0000;
+    text-align: center;
+    font-family: Oswald;
+    font-size: 80px;
+
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxftSAwOh9HCgILTFMsnNUN4fC91_yQ9tzmNxBJsB2TA&s=10");
+
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+
+    height: 200px;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titrestory2
+{
+    color: #CC0000;
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #CC0000;
+    padding-bottom: 15px;
+}
+.divsto {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 30px;
+}
+.story ,.story2 ,.story3,.story4,.story5,.story6,.story7,.story8
+{
+    color: #ddd;
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 25px; 
+}
+
+html, body{
+  background-color: #111;
+  margin: 0;
+  padding: 0;
+}
+
+.style {
+    color: #CC0000;
+    text-align: center;
+    font-family: Oswald;
+    font-size: 80px;
+
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvBAcGq3XvxpbTNCt2nqFydlva0k1sIomNHY6dHjaVtg&s=10");
+
+    background-size: cover;
+    background-position: center 30%;
+    background-repeat: no-repeat;
+
+    height: 160px;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenu-sch {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 30px;
+}
+
+
+
+.titre-principal {
+    color: #CC0000;
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #CC0000;
+    padding-bottom: 15px;
+}
+
+
+
+.sous-titre {
+    color: #CC0000;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+
+
+.paragraphe {
+    color: #ddd;
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+
+
+.description {
+    color: #bbb;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+
+
+.liste-musiques {
+    background-color: #1c1c1c;
+    border-left: 3px solid #CC0000;
+    padding: 15px 15px 15px 40px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+
+.liste-musiques li {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.liste-musiques li::marker {
+    color: #CC0000;
+}
+
+
+
+.conclusion {
+    color: #ddd;
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: justify;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #1c1c1c;
+    border-left: 3px solid #CC0000;
+    border-radius: 5px;
+}
+
+html, body {
+    background-color: #111;
+    margin: 0;
+    padding: 0;
+}
+
+
+.disco-entete {
+    color: #CC0000;
+    text-align: center;
+    font-family: Oswald, sans-serif;
+    font-size: 80px;
+
+    background-image: url("https://www.radiofrance.fr/pikapi/images/2a9c30bd-ade1-4437-85f2-8079ab59fac8/1200x680?webp=false");
+
+    background-size: cover;
+    background-position: center 30%;
+    background-repeat: no-repeat;
+
+    height: 160px;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.disco-conteneur {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 30px;
+}
+
+
+.disco-titre {
+    color: #CC0000;
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #CC0000;
+    padding-bottom: 15px;
+}
+
+
+.disco-sous-titre {
+    color: #CC0000;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+
+.disco-album {
+    color: #CC0000;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+
+.disco-paragraphe {
+    color: #ddd;
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+
+.disco-description {
+    color: #bbb;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+
+.disco-liste {
+    background-color: #1c1c1c;
+    border-left: 3px solid #CC0000;
+    padding: 15px 15px 15px 40px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+
+.disco-liste li {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.disco-liste li::marker {
+    color: #CC0000;
+}
+
+
+
+.disco-conclusion {
+    color: #ddd;
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: justify;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #1c1c1c;
+    border-left: 3px solid #CC0000;
+    border-radius: 5px;
+}
+
