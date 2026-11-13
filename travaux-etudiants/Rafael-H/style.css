@@ -1,0 +1,165 @@
+body {
+  background-color: #8B5CF6;
+}
+
+.titre {
+  text-align: center;
+  color: black;
+  background: linear-gradient(to right, black, lightgray);
+  border: 3px solid #2C3E50;
+  font-family: Arial, sans-serif;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%   { opacity: 1; }
+  50%  { opacity: 0.6; }
+  100% { opacity: 1; }
+}
+
+.piano {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 250px;
+  padding: 10px;
+  background: linear-gradient(to bottom, black, gray, white);
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.touche {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.blanche {
+  flex: 1;
+  height: 15vw;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 0 0 4px 4px;
+  color: #555;
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+
+.noire {
+  width: 1.15%;
+  height: 8.5vw;
+  background-color: black;
+  border-radius: 0 0 3px 3px;
+  margin: 0 -0.575%;
+  z-index: 1;
+  color: white;
+  font-size: 9px;
+  padding: 5px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  writing-mode: vertical-rl;
+}
+
+.blanche:hover {
+  background-color: #e0e0e0;
+  height: 13.7vw;
+}
+
+.blanche:active {
+  background-color: #686256 ;
+  transform: translateY(2px);
+}
+
+.noire:hover {
+  background-color: #444;
+}
+
+@media (max-width: 600px) {
+  .blanche { height: 30vw; }
+  .noire   { height: 18vw; }
+}
+
+/*Amélioration du code avec IA*/
+
+.touche {
+  position: relative;
+}
+
+.noire {
+  overflow: visible; /* remplace overflow: hidden */
+}
+
+.touche::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100%;          /* le carré part du haut de la touche */
+  height: 1.2vw;         /* taille de départ */
+  background-color: var(--couleur, #ff4d6d);
+  border-radius: 3px;
+  pointer-events: none;
+  z-index: 5;
+
+  /* repos / relâchement : il s'envole et disparaît,
+     la hauteur ne revient à la normale qu'après */
+  opacity: 0;
+  transform: translateY(-50vh);
+  transition:
+    transform 1.2s ease-out,
+    opacity 1.2s ease-out,
+    height 0s 1.2s;
+}
+
+.touche:active::after {
+  opacity: 1;
+  transform: translateY(0);
+  height: 50vh;          /* il s'allonge tant que tu maintiens */
+  transition: height 1s linear; /* durée pour atteindre la hauteur max */
+}
+
+.touche:nth-child(7n+1) { --couleur: #9fa9a3; }
+.touche:nth-child(7n+2) { --couleur: #9fa9a3; }
+.touche:nth-child(7n+3) { --couleur: #9fa9a3; }
+.touche:nth-child(7n+4) { --couleur: #9fa9a3; }
+.touche:nth-child(7n+5) { --couleur: #9fa9a3; }
+.touche:nth-child(7n+6) { --couleur: #9fa9a3; }
+.touche:nth-child(7n+7) { --couleur: #9fa9a3; }
+
+.touche::after,   /* version CSS pur */
+.note {           /* version JavaScript */
+  background-image:
+    /* langues de flamme claires (cœur) */
+    radial-gradient(ellipse 50% 60% at 50% 100%, #fff7c2 0%, white 40%, transparent 75%),
+    /* langues de flamme moyennes (orange) */
+    radial-gradient(ellipse 50% 65% at 50% 100%, white 0%, white 45%, transparent 80%),
+    /* langues extérieures, couleur de la touche */
+    radial-gradient(ellipse 50% 70% at 50% 100%, var(--couleur) 0%, transparent 80%),
+    /* lueur de fond */
+    linear-gradient(to top, none, var(--couleur) 40%, transparent);
+  background-size: 34% 38px, 50% 54px, 70% 74px, 100% 100%;
+  background-position: 0 0, 0 0, 0 0, 0 0;
+  background-blend-mode: normal;
+
+  /* la flamme s'affine vers le haut et sur les côtés */
+  -webkit-mask-image: radial-gradient(ellipse 65% 100% at 50% 100%, black 35%, transparent 100%);
+  mask-image: radial-gradient(ellipse 65% 100% at 50% 100%, black 35%, transparent 100%);
+
+  animation:
+    flamme 0.7s linear infinite,
+    vacille 0.18s ease-in-out infinite alternate;
+}
+
+/* chaque couche monte d'un motif complet : vitesses différentes grâce aux tailles différentes */
+@keyframes flamme {
+  to {
+    background-position: 0 -38px, 0 -54px, 0 -74px, 0 0;
+  }
+}
+
+/* léger scintillement de luminosité */
+@keyframes vacille {
+  from { filter: brightness(1)   saturate(1); }
+  to   { filter: brightness(1.3) saturate(1.2); }
+}
