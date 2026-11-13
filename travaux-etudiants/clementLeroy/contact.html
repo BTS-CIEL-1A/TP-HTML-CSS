@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/carredechocolat-removebg-preview.png">
+    <title>Carré de chocolat</title>
+</head>
+
+<body>
+    <header>
+            <nav class="nav-link">
+                <a href="index.html"><h1 id="title-principal">HORIZON <span id="voyage-yellow">VOYAGES</span></h1></a>
+                <div class="nav-content">
+                <a href="destinations.html">Destinations</a>
+                <a href="sejours.html">Séjours</a>
+                <a href="agence.html">L'agence</a>
+                <a href="contact.html"><span id="yellow-page">Contact</span></a>
+                </div>
+                <a href="contact.html"><span id="devis-button">Demander un devis</span></a>
+            </nav>
+    </header>
+    <main>
+            <div class="acceuil">
+                <p><span id="voyage-mesure">VOYAGE SUR MESURE</span></p>
+                <h2 id="title-2">Partez là où l'envie vous mène.</h2>
+                <p id="desc-title-2">Circuits, séjours et escapades conçus avec un conseiller dédié, de la première idée au retour.</p>
+            </div>
+            <div>
+                <div class="search">
+                    <form action="#" method="post" class="devis-container">
+                        <div class="form-column">
+                            <label for="devis-name" class="form-label">Nom</label>
+                            <input type="text" id="devis-name" name="name" placeholder="Votre nom" class="form-input" required>
+                        </div>
+
+                        <div class="form-column">
+                            <label for="devis-mail" class="form-label">E-mail</label>
+                            <input type="email" name="email" id="devis-mail" class="form-input" placeholder="vous@exemple.fr" required>
+                        </div>
+
+                        <div class="form-column">
+                            <label for="devis-tel" class="form-label">Téléphone</label>
+                            <input type="tel" name="tel" id="devis-tel" class="form-input" placeholder="06 00 00 00 00" required>
+                        </div>
+                        
+                        <div class="form-column">
+                            <label for="devis-depart" class="form-label">Depart</label>
+                            <input type="date" name="depart" id="devis-depart" class="form-input" required>
+                        </div>
+
+                        <div class="form-column">
+                            <label for="devis-retour" class="form-label">Retour</label>
+                            <input type="date" name="retour" id="devis-retour" class="form-input" required>
+                        </div>
+
+                        <div class="form-column">
+                            <label for="devis-voyageurs" class="form-label">Voyageurs</label>
+                            <input type="number" name="voyageurs" id="devis-voyageurs" class="form-input" placeholder="2 adultes" required>
+                        </div>
+
+                        <div class="form-column">
+                            <label for="devis-projet" class="form-label">Votre Projet</label>
+                            <input type="text" name="projet" id="devis-projet" class="form-input" placeholder="Budget, envie, contraintes..." required>
+                        </div>
+
+                        <button type="submit" class="form-button">Envoyer ma demande</button>
+                    </form>
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div class="why-container">
+                <h2 class="why-title">Comment ça se passe</h2>
+                <div class="why-list">
+                    <div class="why-item">
+                        <h3 class="why-item-title">1. Vous nous écrivez</h3>
+                        <p class="why-item-desc">Dites-nous où et quand vous voulez partir.</p>
+                    </div>
+
+                    <div class="why-item">
+                        <h3 class="why-item-title">2. Nous vous rappelons</h3>
+                        <p class="why-item-desc">Un conseiller affine votre projet de voyage avec vous.</p>
+                    </div>
+
+                    <div class="why-item">
+                        <h3 class="why-item-title">3. Vous recevez un devis</h3>
+                        <p class="why-item-desc">Une proposition claire, sans engagement.</p>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer class="footer">
+        <p>© Horizon Voyages — [ADRESSE] · [TÉLÉPHONE]</p>
+        <p>Mentions légales · Conditions de vente</p>
+    </footer>
+</body>
+
+</html>
+
+
