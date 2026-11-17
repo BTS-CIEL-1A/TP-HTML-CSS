@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/carredechocolat-removebg-preview.png">
-    <title>Carré de chocolat</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/LogoHorizonVoyage.svg">
+    <title>Séjours - Horizon Voyages</title>
 </head>
 
 <body>
@@ -27,34 +27,46 @@
                 <h2 id="title-2">Des séjours prêts à partir.</h2>
                 <p id="desc-title-2">Vols, hébergements et activités déjà organisés. Vous choisissez, nous nous occupons du reste.</p>
             </div>
-            <div>
-                <div class="preference">
-                    <div class="preference-button">
-                        <input type="checkbox" name="toutes" id="preference-toutes" checked>
-                        <label for="preference-toutes">Toutes</label>
-
-                        <input type="checkbox" name="Europe" id="preference-europe">
-                        <label for="preference-europe">Europe</label>
-
-                        <input type="checkbox" name="Afrique" id="preference-afrique">
-                        <label for="preference-afrique">Afrique</label>
-
-                        <input type="checkbox" name="Asie" id="preference-asie">
-                        <label for="preference-asie">Asie</label>
-
-                        <input type="checkbox" name="Ameriques" id="preference-ameriques">
-                        <label for="preference-ameriques">Amériques</label>
-
-                        <input type="checkbox" name="Oceanie" id="preference-oceanie">
-                        <label for="preference-oceanie">Océanie</label>
+            <div class="popular">
+                <div clas="popular-container">
+                    <div class="popular-image">
+                        <span><img src="images/popular-grece.jpg" alt=""></span>
+                    </div>
+                    <div class="popular-content">
+                        <span class="popular-content-badge">SÉJOUR A LA UNE</span>
+                        <h3 class="popular-content-title">Cyclades en liberté</h3>
+                        <p class="popular-content-desc">Dix jours entre Santorin, Naxos et Paros, avec vols ferries et hébergements réservés.</p>
+                        <div class="popular-content-link">
+                            <strong class="popular-content-price">dès [999€]</strong>
+                            <span class="popular-content-button">Voir le séjour</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="dest-container">
-                <div class="dest-title">
-                    <h2 id="dest-title">Destinations du moment</h2>
-                    <a href="destinations.html" id="dest-all">Tout voir →</a>
+            <div>
+                <div class="preference">
+                    <div class="preference-button">
+                        <input type="checkbox" name="tous" id="preference-tous" checked>
+                        <label for="preference-tous">Tous</label>
+
+                        <input type="checkbox" name="plage" id="preference-plage">
+                        <label for="preference-plage">Plage</label>
+
+                        <input type="checkbox" name="circuit" id="preference-circuit">
+                        <label for="preference-circuit">Circuit</label>
+
+                        <input type="checkbox" name="roadtrip" id="preference-roadtrip">
+                        <label for="preference-roadtrip">Road trip</label>
+
+                        <input type="checkbox" name="citybreak" id="preference-citybreak">
+                        <label for="preference-citybreak">City-break</label>
+
+                        <input type="checkbox" name="famille" id="preference-famille">
+                        <label for="preference-famille">Famille</label>
+                    </div>
                 </div>
+            </div>
+            <div class="dest-container-all">
                 <div class="dest-boxes">
                     <div class="dest-box">
                         <div class="dest-box-image"><img src="images/russell_yan-church-2020258.jpg" alt="[PHOTO]" ></div>

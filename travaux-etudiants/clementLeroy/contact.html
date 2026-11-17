@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/carredechocolat-removebg-preview.png">
-    <title>Carré de chocolat</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/LogoHorizonVoyage.svg">
+    <title>Contact - Horizon Voyages</title>
 </head>
 
 <body>
@@ -23,11 +23,11 @@
     </header>
     <main>
             <div class="acceuil">
-                <p><span id="voyage-mesure">VOYAGE SUR MESURE</span></p>
-                <h2 id="title-2">Partez là où l'envie vous mène.</h2>
-                <p id="desc-title-2">Circuits, séjours et escapades conçus avec un conseiller dédié, de la première idée au retour.</p>
+                <p><span id="voyage-mesure">Contact</span></p>
+                <h2 id="title-2">Parlons de votre voyage.</h2>
+                <p id="desc-title-2">Décrivez votre projet, un conseiller vous répond rapidement.</p>
             </div>
-            <div>
+            <div class="contact-main">
                 <div class="search">
                     <form action="#" method="post" class="devis-container">
                         <div class="form-column">
@@ -58,18 +58,43 @@
                         <div class="form-column">
                             <label for="devis-voyageurs" class="form-label">Voyageurs</label>
                             <input type="number" name="voyageurs" id="devis-voyageurs" class="form-input" placeholder="2 adultes" required>
-                        </div>
+                        </div> 
 
-                        <div class="form-column">
+                        <div class="form-column" id="full-width">
                             <label for="devis-projet" class="form-label">Votre Projet</label>
-                            <input type="text" name="projet" id="devis-projet" class="form-input" placeholder="Budget, envie, contraintes..." required>
+                            <textarea type="text" name="projet" id="devis-projet" class="form-input" placeholder="Budget, envie, contraintes..." required></textarea>
                         </div>
 
-                        <button type="submit" class="form-button">Envoyer ma demande</button>
+                        <button type="submit" class="form-button" id="full-width">Envoyer ma demande</button>
                     </form>
                 </div>
-                <div>
-
+                <div class="coords">
+                    <h3 class="coords-title">Nos coordonnées</h3>
+                    <div class="coords-item">
+                        <span class="coords-item-title">Adresse</span>
+                        <span class="coords-item-content">[Adresse]</span>
+                    </div>
+                    <div class="coords-item">
+                        <span class="coords-item-title">Téléphone</span>
+                        <span class="coords-item-content">[Téléphone]</span>
+                    </div>
+                    <div class="coords-item">
+                        <span class="coords-item-title">E-mail</span>
+                        <span class="coords-item-content">[E-mail]</span>
+                    </div>
+                    <div class="coords-item">
+                        <span class="coords-item-title">Horaires</span>
+                        <span class="coords-item-content">[Horaires]</span>
+                    </div>
+                    <div>
+                        <span class="coords-item-map">
+                            <iframe 
+                                src="https://www.openstreetmap.org/export/embed.html?bbox=3.0500%2C50.6250%2C3.0750%2C50.6400&layer=mapnik&marker=50.6325%2C3.0625" 
+                                loading="lazy" 
+                                title="Carte de localisation de l'agence Horizon Voyages">
+                            </iframe>
+                        </span>
+                    </div>
                 </div>
             </div>
             <div class="why-container">

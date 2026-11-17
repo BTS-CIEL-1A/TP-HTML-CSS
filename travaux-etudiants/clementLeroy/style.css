@@ -1,3 +1,5 @@
+/* #### General #### */
+
 *{
   margin: 0;
   padding: 0;
@@ -12,6 +14,13 @@ a{
   color: inherit;
 }
 
+
+
+/* #### Main page #### */
+
+
+
+/* ## Header ## */
 .nav-link{
   display: flex;
   flex-direction: row;
@@ -42,7 +51,7 @@ a{
     color:rgb(245, 194, 66) ;
 }
 
-#devis-button{
+#button{
   display: flex;
   flex-direction: row;
   background-color:rgb(245, 194, 66) ;
@@ -54,6 +63,9 @@ a{
   font-weight: bold;
 }
 
+
+
+/* ## composant 1 ## */
 
 .acceuil{
   background-color: rgb(15,92,99) ;
@@ -80,8 +92,13 @@ a{
   color: rgb(213,230,228);
 }
 
+
+
+/* ## Formulaire ## */
+
 .search{
   padding:0 32px;
+  flex: 1 1;
 }
 .search-container{
   display: flex;
@@ -155,6 +172,12 @@ input[type="date"].form-input::-webkit-datetime-edit-year-field {
   border: 0;
 }
 
+
+
+/* ## Preview destinations ## */
+
+
+
 .dest-container{
   padding: 96px 32px 24px;
 }
@@ -225,6 +248,12 @@ input[type="date"].form-input::-webkit-datetime-edit-year-field {
   color: rgb(15,92,99);
 }
 
+
+
+/* ## Info supp ## */
+
+
+
 .why-container{
   padding: 72px 32px;
 }
@@ -246,6 +275,9 @@ input[type="date"].form-input::-webkit-datetime-edit-year-field {
   border-top-style: solid;
   padding-top: 20px;
   max-width: 32%;
+  flex: 1 1;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .why-item-title{
@@ -256,6 +288,12 @@ input[type="date"].form-input::-webkit-datetime-edit-year-field {
 .why-item-desc{
   color: rgb(60,90,98);
 }
+
+
+
+/* ## composant contact ## */
+
+
 
 .contact-container{
   padding: 72px 32px;
@@ -287,6 +325,12 @@ input[type="date"].form-input::-webkit-datetime-edit-year-field {
   border-radius: 50px;
 }
 
+
+
+/* ## Footer ## */
+
+
+
 .footer{
   background: rgb(11,42,51);
   color: rgb(185, 203, 203);
@@ -297,17 +341,102 @@ input[type="date"].form-input::-webkit-datetime-edit-year-field {
   gap: 12px;
 }
 
-.devis-container{
+
+/* #### Destinations #### */
+
+
+.dest-container-all{
+  padding: 32px 32px 24px;
+}
+
+.dest-number{
+  padding-bottom: 16px;
+  color: #3C5A62;
+}
+
+
+
+/* ##### SEJOURS ###### */
+
+
+
+.popular{
+  padding: 16px 32px;
+}
+
+.popular-container{
+  background: rgb(255,255,255);
+  border-radius: 16px;
+  /* min-height: 320px;*/
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  background: rgb(255, 255, 255);
-  border-radius: 20px;
-  padding: 28px;
-  border: 10px;
-  margin: 64px 0px;
-  gap: 20px;
+  overflow: hidden;
+}
+
+.popular-image{
+  background: rgb(15,92,99);
+  width: 50%;
+  flex: 1 1 400px;
+}
+
+.popular-image img{
+  width: 100%;
+  height: 100%;
+}
+
+.popular-content{
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 14px;
+  flex: 1 1 400px;
+}
+
+.popular-content-badge{
+  height: 16px;
+  background: rgb(245, 194, 66);
+  border-radius: 50px;
+  padding: 12px 6px;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #0B2A33;
+}
+
+.popular-content-title{
+  font-size: 34px;
+  font-weight: bolder;
+  color: rgb(11, 42, 51);
+}
+
+.popular-content-desc{
+  color: #3C5A62;
+  font-size: 17px;
+}
+
+.popular-content-link{
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.popular-content-price{
+  color: #0F5C63;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.popular-content-button{
+  padding: 14px 28px;
+  background:#0B2A33;;
+  color: rgb(255,255,255);
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .preference{
@@ -338,16 +467,180 @@ input[type="date"].form-input::-webkit-datetime-edit-year-field {
   gap: 12px;
 }
 
-  .preference-button input[type="checkbox"]:checked + label {
+.preference-button input[type="checkbox"]:checked + label {
     background-color: rgb(11,42,51);
     color: white;
     border-color: rgb(11,42,51);
-  }
-.dest-container-all{
-  padding: 32px 32px 24px;
 }
 
-.dest-number{
-  padding-bottom: 16px;
+/* #### AGENCE #### */
+
+.history{
+  padding: 72px 32px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  align-items: center;
+}
+
+.history-image{
+  background: rgb(15,92,99);
+  border-radius: 16px;
+  padding: 20px;
+  flex: 1 1 400px;
+  min-height: 340px;
+}
+
+.history-content{
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 400px;
+}
+
+.history-title{
+  font-size: 32px;
+  font-weight: bolder;
+  color: rgb(11, 42, 51);
+  margin: 0 0 20px;
+}
+
+.history-desc{
+  font-size: 17px;
   color: #3C5A62;
+}
+
+
+.stats{
+  padding: 56px 32px;
+  gap: 32px;
+  background: rgb(11, 42, 51);
+}
+
+.stats-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1 1;
+}
+
+.stats-info{
+  font-size: 44px;
+  font-weight: bolder;
+  color: rgb(245, 194, 66);
+}
+
+.stats-desc{
+  margin: 4px 0 0;
+  color: rgb(213,230,228);
+}
+
+.staff{
+  padding: 72px 32px;
+}
+
+.staff-title{
+  font-size: 32px;
+  font-weight: bolder;
+  margin: 0 0 20px;
+}
+
+.staff-cards{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.staff-card{
+  flex-wrap: wrap;
+  width: 220px;
+  height: 280px;
+}
+
+.staff-card-image{
+  background: rgb(61,90,98);
+  min-height: 220px;
+  display: flex;
+  border-radius: 16px;
+}
+
+.staff-card-name{
+  margin: 14px 0 4px;
+  font-size: 18px;
+}
+
+.staff-card-job{
+  font-size:  15px;
+  color: rgb(60,90,98);
+}
+
+
+/* #### Contact #### */
+
+.devis-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  align-items: flex-end;
+  background: rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 28px;
+  border: 10px;
+  margin: 32px 0px;
+  gap: 20px;
+}
+
+#devis-projet{
+  height: 150px;
+  resize: none;
+}
+
+#full-width{
+  grid-column: 1 / -1;
+}
+
+.coords{
+  background: rgb(11, 42, 51);
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 300px;
+  border-radius: 20px;
+  padding: 32px;
+  margin: 32px;
+  gap: 22px;
+  max-width: 40%;
+}
+
+.coords-title{
+  color: rgb(245, 194, 66);
+}
+
+.coords-item{
+  display: flex;
+  flex-direction: column;
+}
+
+.coords-item-title{
+  color: rgb(60,90,98);
+}
+
+.coords-item-content{
+  color: rgb(255, 255, 255);
+}
+
+.coords-item-map {
+  background: rgb(15, 92, 99);
+  height: 2060px; 
+  border-radius: 12px;
+  overflow: hidden; 
+}
+.coords-item-map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0; 
+  display: block;
+}
+
+.contact-main{
+  display: flex;
+  flex-wrap: wrap;
 }
