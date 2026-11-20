@@ -1,82 +1,208 @@
-body{
-    background-color: white;
-    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    padding-left: 240px;
+/* Style général de toutes les pages */
+body {
     margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f5f9;
+    color: #20283a;
+    font-family: Arial, sans-serif;
 }
 
-.entete{
+/* En-tête du site et nom PexioShop */
+.entete {
+    padding: 20px;
+    background-color: #17233c;
+    color: white;
+    text-align: center;
+}
+
+.entete h1 {
+    margin: 0;
+    color: #71e0c1;
+}
+
+.entete p {
+    margin-bottom: 0;
+}
+
+/* Disposition principale : menu à gauche, contenu à droite */
+.page {
+    display: flex;
+    gap: 25px;
+    flex: 1;
+}
+
+/* Menu de navigation */
+.menu {
+    width: 210px;
+    padding: 20px;
+    background-color: #17233c;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: #293956;
+    color: #71e0c1;
+}
+
+/* Zone de contenu de chaque page */
+.contenu {
+    flex: 1;
+    padding: 25px;
+}
+
+/* Blocs d'accueil, annonces et détails : fond, bordure et espacements */
+.presentation, .bloc, .annonce, .details {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #d5dce7;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.presentation {
+    padding: 30px;
+}
+
+.presentation h2 {
+    color: #14876d;
+}
+
+/* Annonce et fiche : image à gauche, texte à droite */
+.annonce, .details {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Le texte utilise l'espace restant à côté de l'image */
+.annonce-texte, .details-texte {
+    flex: 1;
+}
+
+.annonce-texte h3 {
+    margin-top: 0;
+}
+
+.details {
+    flex-wrap: wrap;
+}
+
+.details h2 {
+    width: 100%;
+}
+
+/* Liste des annonces en colonne */
+.liste-annonces {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Carrés pour les photos d'annonce et le cadre sans photo */
+.photo-annonce, .photo-detail, .photo-a-ajouter {
+    width: 220px;
+    height: 220px;
+}
+
+/* Photo complète visible dans le carré, sans être rognée */
+.photo-annonce, .photo-detail {
+    border: 1px solid #d5dce7;
+    object-fit: contain;
+}
+
+/* Texte temporaire affiché à la place d'une photo manquante */
+.photo-a-ajouter {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    background-color: #eee;
-    padding: 20px;
+    background-color: #edf1f6;
+    color: #647086;
 }
 
-h1{
-    color: #333;
-    font-size: 50px;
-    text-align: center;
-    margin: 0;
+/* Prix des composants */
+.prix {
+    color: #14876d;
+    font-size: 22px;
+    font-weight: bold;
 }
 
-p{
-    color: #333;
-    font-size: 20px;
-    margin: 20px;
-}
-
-                                            /*MENU LATERAL*/
-
-/*Déf du menu latéral*/
-.sidebar1{
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 200px;
-    height: 100vh;
-    padding: 20px;
-    background-color: #eee;
-}
-/*Navigation, disposition verticale*/
-.sidebar1 nav{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-/*Style des liens*/
-.sidebar1 a{
-    color: #333;
+/* Liens présentés comme des boutons */
+.bouton {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #14876d;
+    color: white;
     text-decoration: none;
-    font-size: 20px;
-    padding: 8px 0;
-    border-bottom: 1px solid #ccc;
 }
 
+.bouton:hover {
+    background-color: #0e6f59;
+}
 
+/* Pied de page commun */
+.pied-page {
+    padding: 15px;
+    background-color: #17233c;
+    color: white;
+    text-align: center;
+}
 
-                                        /*RESPONSIVE DESIGN*/
-/*Pour les écrans de moins de 768px de large*/
-@media (max-width: 768px){
-    body{
-        padding-left: 0;
+/* Adaptation aux petits écrans : menu en haut et annonces en colonne */
+@media (max-width: 650px) {
+    .page {
+        flex-direction: column;
+        gap: 0;
     }
-    .sidebar1{
-        position: static;
-        width: auto;
-        height: auto;
-        padding: 12px;
+
+    .menu {
+        width: 100%;
+        padding: 10px;
     }
-    .sidebar1 nav{
-        flex-direction: row;
+
+    .menu ul {
+        display: flex;
         flex-wrap: wrap;
+        gap: 5px;
     }
-    .entete{
-        margin-left: 0;
-        padding: 12px;
+
+    .menu li {
+        margin: 0;
     }
-    h1{
-        font-size: clamp(2rem, 8vw, 3.125rem);
+
+    .contenu {
+        padding: 15px;
+    }
+
+    .annonce, .details {
+        flex-direction: column;
+    }
+
+    .photo-annonce, .photo-detail, .photo-a-ajouter {
+        width: 100%;
+        max-width: 220px;
+        align-self: center;
+    }
+
+    .details h2, .details p {
+        width: 100%;
     }
 }

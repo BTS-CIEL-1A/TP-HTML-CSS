@@ -1,26 +1,50 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>PexioShop</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header class="entete">
-            <h1>Accueil PexioShop</h1>
-        </header>
-        
-        <!--Définir le menu latéral et les liens-->
-        <aside class="sidebar1">
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - PexioShop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="entete">
+        <h1>PexioShop</h1>
+        <p>Composants informatiques d'occasion</p>
+    </header>
+    <div class="page">
+        <aside class="menu">
             <nav>
-                <a href="index.html">Accueil</a>
-                <a href="website/sell.html">Annonces</a>
-                <a href="website/contact.html">Nous contacter</a>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="articles/index.html">Annonces</a></li>
+                    <li><a href="config/index.html">Configurations</a></li>
+                    <li><a href="annexes/contact.html">Contact</a></li>
+                </ul>
             </nav>
         </aside>
 
-        
-        <p></p>
-    </body>
+        <main class="contenu">
+            <section class="presentation">
+                <h2>Bienvenue chez PexioShop</h2>
+                <p>Consultez les annonces de composants informatiques, découvrez les détails d'un article et contactez-nous si vous êtes intéressé ou souhaitez avoir plus d'informations.</p>
+                <p><a class="bouton" href="articles/index.html">Voir les annonces</a>
+                <a class="bouton" href="config/index.html">Voir les configurations</a>
+                </p>
+            </section>
+
+            <section class="bloc">
+                <h2>Comment ça marche ?</h2>
+                <ul>
+                    <li>Consultez les annonces de composants informatiques.</li>
+                    <li>Ouvrez une annonce pour consulter ses informations.</li>
+                    <li>Contactez-nous pour poser une question ou convenir d'une remise.</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <footer class="pied-page">
+        <p>PexioShop - Annonces de composants informatiques</p>
+    </footer>
+</body>
 </html>
