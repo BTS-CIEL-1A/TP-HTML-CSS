@@ -1,0 +1,95 @@
+body {
+    background: linear-gradient(135deg, #090909, #25202d);
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    padding: 30px;
+    text-align: center;
+}
+
+header, main {
+    margin: 0 auto;
+    max-width: 850px;
+}
+
+header {
+    border-bottom: 1px solid #55445d;
+    padding-bottom: 20px;
+}
+
+h1, h2 { color: #ff00bf; }
+
+section {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    margin-top: 35px;
+}
+
+h2 { grid-column: 1 / -1; margin: 0 0 5px; }
+
+article {
+    background: rgba(255, 255, 255, .07);
+    border: 1px solid rgba(255, 255, 255, .12);
+    border-radius: 12px;
+    padding: 20px 15px;
+}
+
+img {
+    height: 80px;
+    object-fit: contain;
+    vertical-align: middle;
+    width: 90px;
+}
+
+p { line-height: 1.5; }
+a { color: #ff66d1; }
+.setup-link { margin: 24px 0 0; }
+
+.setup-link a, .back-link {
+    background: #ff00bf;
+    border-radius: 999px;
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    padding: 12px 22px;
+    text-decoration: none;
+    transition: background-color .2s ease, transform .2s ease;
+}
+
+.setup-link a:hover, .back-link:hover {
+    background: #d900a3;
+    transform: translateY(-2px);
+}
+
+.setup-page main { max-width: 1050px; }
+
+.setup-page .intro {
+    color: #d5cbd8;
+    margin: 20px auto 0;
+    max-width: 620px;
+}
+
+.setup-page .gear-list { text-align: left; }
+
+.gear-card { display: flex; flex-direction: column; gap: 12px; min-height: 250px; }
+.gear-card h2 { color: #ff66d1; font-size: 1.2rem; margin: 0; }
+
+.gear-card .gear-image {
+    background: rgba(0, 0, 0, .2);
+    border-radius: 8px;
+    height: 150px;
+    object-fit: contain;
+    padding: 8px;
+    width: calc(100% - 16px);
+}
+
+.gear-card dl { margin: 0; }
+.gear-card dt { color: #ffb5e9; font-weight: bold; margin-top: 8px; }
+.gear-card dd { color: #e2dce4; margin: 3px 0 0; }
+.back-link { margin: 30px 0 10px; }
+
+@media (max-width: 500px) {
+    body { padding: 20px 14px; }
+}
