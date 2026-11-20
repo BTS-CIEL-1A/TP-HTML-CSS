@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675">
+  <defs>
+    <pattern id="dots" width="12" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.5" fill="#111"/>
+    </pattern>
+    <pattern id="speed" width="24" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+      <line x1="0" y1="0" x2="0" y2="24" stroke="#111" stroke-width="4"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="675" fill="#fff"/>
+  <rect x="12" y="12" width="1176" height="651" fill="url(#dots)" stroke="#111" stroke-width="14"/>
+  <circle cx="900" cy="190" r="130" fill="#fff" stroke="#111" stroke-width="10"/>
+  <path d="M25 500 L180 280 L300 490 L440 210 L575 500 L700 315 L815 500Z" fill="#111"/>
+  <path d="M25 570 L225 420 L375 550 L540 370 L700 565 L850 430 L980 560Z" fill="#fff" stroke="#111" stroke-width="8"/>
+  <path d="M330 663 Q365 485 565 425 Q760 465 805 663Z" fill="#111"/>
+  <path d="M420 450 Q445 320 575 300 Q690 330 720 450 L675 510 L465 510Z" fill="#111" stroke="#fff" stroke-width="8"/>
+  <path d="M470 430 Q560 390 670 430 L650 472 Q560 450 485 475Z" fill="#fff"/>
+  <path d="M505 442 L545 438 L530 450Z M590 438 L630 442 L605 451Z" fill="#111"/>
+  <path d="M445 505 L355 570 M680 510 L790 575" stroke="#fff" stroke-width="18"/>
+  <path d="M720 535 L965 260" stroke="#111" stroke-width="18"/>
+  <path d="M720 535 L965 260" stroke="#fff" stroke-width="5"/>
+  <path d="M30 90 L310 30 M50 160 L360 80 M850 80 L1170 25 M890 125 L1180 70" stroke="#111" stroke-width="5"/>
+</svg>

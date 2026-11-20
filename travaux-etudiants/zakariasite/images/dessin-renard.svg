@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675">
+  <defs>
+    <linearGradient id="sunset" x2="0" y2="1">
+      <stop stop-color="#ffd88a"/>
+      <stop offset="1" stop-color="#f28a69"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#sunset)"/>
+  <circle cx="935" cy="150" r="85" fill="#fff0a8"/>
+  <path d="M0 390 L130 170 L265 390 L395 120 L545 400 L700 180 L840 395 L1000 135 L1200 405 V675 H0Z" fill="#427b68"/>
+  <path d="M0 470 Q190 350 360 475 T720 470 T1080 465 T1400 470 V675 H0Z" fill="#286253"/>
+  <path d="M95 675 V310 Q120 205 145 310 V675 M1020 675 V290 Q1045 170 1070 290 V675" fill="#34503e"/>
+  <path d="M75 390 L145 235 L215 390 M1000 380 L1045 220 L1110 380" fill="#6ba66a"/>
+  <path d="M275 520 Q325 410 445 415 Q555 420 605 525 Q700 545 770 625 L730 650 H275Z" fill="#d66b3f" stroke="#673b36" stroke-width="12"/>
+  <path d="M315 455 L330 325 L430 395 L520 320 L555 460 Q510 515 430 515 Q350 515 315 455Z" fill="#f58a45" stroke="#673b36" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M355 455 Q430 400 510 455 Q480 505 430 505 Q380 505 355 455Z" fill="#fff0d2"/>
+  <circle cx="390" cy="435" r="10" fill="#342b39"/>
+  <circle cx="470" cy="435" r="10" fill="#342b39"/>
+  <path d="M410 470 Q430 488 450 470" fill="none" stroke="#673b36" stroke-width="8" stroke-linecap="round"/>
+  <path d="M610 550 Q720 470 800 550 Q745 595 670 575" fill="#f58a45" stroke="#673b36" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M680 535 Q740 510 785 550 Q742 570 700 560Z" fill="#fff0d2"/>
+  <path d="M330 610 L320 655 M525 600 L540 655" stroke="#673b36" stroke-width="16" stroke-linecap="round"/>
+  <path d="M180 550 Q200 520 220 550 Q200 580 180 550 M900 500 Q920 470 940 500 Q920 530 900 500" fill="#ffe59a"/>
+</svg>

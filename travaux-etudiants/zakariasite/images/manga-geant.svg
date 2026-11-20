@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675">
+  <defs>
+    <pattern id="dots" width="12" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.5" fill="#111"/>
+    </pattern>
+    <pattern id="speed" width="24" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(-25)">
+      <line x1="0" y1="0" x2="0" y2="24" stroke="#111" stroke-width="4"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="675" fill="#fff"/>
+  <rect x="12" y="12" width="1176" height="651" fill="url(#speed)" stroke="#111" stroke-width="14"/>
+  <path d="M25 510 L100 350 H180 V510 M200 510 V285 H300 V510 M320 510 V390 H395 V510 M820 510 V320 H900 V510 M925 510 V245 H1030 V510 M1050 510 V365 H1175 V510Z" fill="#111"/>
+  <path d="M120 510 V400 H160 V510 M225 510 V325 H270 V510 M845 510 V370 H875 V510 M955 510 V290 H1000 V510 M1080 510 V415 H1145 V510" fill="#fff"/>
+  <path d="M365 663 Q385 400 480 290 Q515 230 600 220 Q690 230 730 300 Q825 405 845 663Z" fill="#111"/>
+  <path d="M420 335 Q420 145 600 125 Q780 145 780 335 L740 430 H460Z" fill="#111" stroke="#fff" stroke-width="8"/>
+  <path d="M455 285 Q510 245 565 285 L550 312 L470 310Z M635 285 Q690 245 745 285 L730 312 L650 310Z" fill="#fff"/>
+  <path d="M480 290 L545 290 M655 290 L720 290" stroke="#111" stroke-width="9"/>
+  <path d="M565 325 Q600 350 635 325 M540 390 Q600 430 660 390" fill="none" stroke="#fff" stroke-width="9"/>
+  <path d="M475 420 L390 560 M725 420 L815 560" stroke="#fff" stroke-width="20"/>
+  <path d="M390 560 L300 610 M815 560 L905 610" stroke="#111" stroke-width="34"/>
+  <path d="M40 95 L330 25 M50 160 L360 80 M850 90 L1160 20 M880 155 L1170 75" stroke="#111" stroke-width="5"/>
+  <path d="M40 625 H250 M950 625 H1160" stroke="#fff" stroke-width="9"/>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675">
+  <defs>
+    <pattern id="dots" width="12" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.5" fill="#111"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="675" fill="#fff"/>
+  <rect x="12" y="12" width="1176" height="651" fill="#fff" stroke="#111" stroke-width="14"/>
+  <circle cx="950" cy="145" r="88" fill="#111"/>
+  <path d="M25 380 L190 150 L330 380 L500 115 L675 380 L840 190 L1010 390 L1175 180 V490 H25Z" fill="#111"/>
+  <path d="M115 275 L190 150 L265 275 L215 245Z M405 260 L500 115 L590 260 L530 230Z M760 280 L840 190 L920 280 L855 255Z" fill="#fff"/>
+  <path d="M35 405 Q200 350 365 405 T695 405 T1025 405 T1170 405 V650 H35Z" fill="url(#dots)" stroke="#111" stroke-width="8"/>
+  <path d="M80 490 Q240 450 390 490 T700 490 T1010 490 T1170 490 M55 555 Q220 515 390 555 T725 555 T1060 555 T1180 555" fill="none" stroke="#111" stroke-width="8"/>
+  <path d="M400 470 Q600 420 815 470 L745 535 H470Z" fill="#111"/>
+  <path d="M580 430 V230 L735 405Z" fill="#fff" stroke="#111" stroke-width="10"/>
+  <path d="M570 425 V250 L445 410Z" fill="#111" stroke="#fff" stroke-width="8"/>
+  <path d="M590 430 V220" stroke="#111" stroke-width="12"/>
+  <path d="M250 663 Q280 485 420 440 Q520 455 565 555 L530 663Z" fill="#111"/>
+  <circle cx="420" cy="425" r="63" fill="#fff" stroke="#111" stroke-width="10"/>
+  <path d="M360 420 Q390 335 465 370 L500 420 L470 405 L450 420 L430 402 L405 420 L385 405Z" fill="#111"/>
+  <path d="M380 435 L460 435 M392 455 Q420 475 448 455" fill="none" stroke="#111" stroke-width="8"/>
+  <circle cx="305" cy="555" r="75" fill="#fff" stroke="#111" stroke-width="12"/>
+  <path d="M305 495 V615 M245 555 H365 M263 513 L347 597 M347 513 L263 597" stroke="#111" stroke-width="8"/>
+</svg>

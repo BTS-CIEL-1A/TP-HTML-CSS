@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675">
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#293b87"/>
+      <stop offset="1" stop-color="#b66fc5"/>
+    </linearGradient>
+    <linearGradient id="planet" x2="0" y2="1">
+      <stop stop-color="#ffdc8a"/>
+      <stop offset="1" stop-color="#ff8f9c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#sky)"/>
+  <circle cx="115" cy="105" r="7" fill="#fff5c8"/>
+  <circle cx="320" cy="190" r="5" fill="#fff5c8"/>
+  <circle cx="520" cy="85" r="8" fill="#fff5c8"/>
+  <circle cx="780" cy="155" r="6" fill="#fff5c8"/>
+  <circle cx="1080" cy="85" r="7" fill="#fff5c8"/>
+  <circle cx="1050" cy="330" r="5" fill="#fff5c8"/>
+  <circle cx="180" cy="360" r="6" fill="#fff5c8"/>
+  <circle cx="1010" cy="525" r="105" fill="url(#planet)"/>
+  <ellipse cx="1010" cy="525" rx="165" ry="38" fill="none" stroke="#fff0b0" stroke-width="16" transform="rotate(-18 1010 525)"/>
+  <path d="M25 600 Q160 500 295 600 T565 600 T835 600 T1105 600 V675 H25Z" fill="#332b79"/>
+  <path d="M45 610 Q145 545 245 610 T445 610 M600 625 Q710 555 820 625 T1040 625" fill="none" stroke="#786ad1" stroke-width="12"/>
+  <path d="M455 530 Q405 470 430 405 Q455 340 530 350 Q605 360 620 430 L600 530Z" fill="#f3f5ff" stroke="#282957" stroke-width="15"/>
+  <circle cx="520" cy="365" r="100" fill="#eaf4ff" stroke="#282957" stroke-width="18"/>
+  <circle cx="520" cy="365" r="72" fill="#64c8e8"/>
+  <path d="M490 372 Q515 340 545 372 Q535 405 500 405Z" fill="#ffcf83"/>
+  <circle cx="499" cy="367" r="7" fill="#282957"/>
+  <circle cx="538" cy="367" r="7" fill="#282957"/>
+  <path d="M495 430 L445 460 M585 430 L630 455 M470 530 L450 575 M575 530 L595 575" stroke="#282957" stroke-width="18" stroke-linecap="round"/>
+  <rect x="580" y="475" width="32" height="55" rx="8" fill="#ffcf83" stroke="#282957" stroke-width="8"/>
+  <path d="M630 180 L650 220 L695 225 L662 255 L670 300 L630 278 L590 300 L598 255 L565 225 L610 220Z" fill="#fff3a8"/>
+</svg>

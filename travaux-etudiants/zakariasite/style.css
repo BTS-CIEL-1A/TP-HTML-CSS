@@ -1,0 +1,122 @@
+body {
+    margin: 0px;
+    padding: 30px;
+    background: #f3f4f6;
+    min-height: 100vh;
+    color: #1f2937;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: #111827;
+    font-family: system-ui, sans-serif;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.galerie {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.fond {
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+    background: #ffffff;
+    text-align: center;
+    box-shadow: 0 4px 12px #00000018;
+}
+
+.fond img {
+    width: 100%;
+    height: 190px;
+    border-radius: 7px;
+    object-fit: cover;
+}
+
+.bouton-apercu {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 7px;
+    cursor: zoom-in;
+}
+
+.bouton-apercu:focus-visible {
+    outline: 3px solid #2563eb;
+    outline-offset: 4px;
+}
+
+.fond h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #1f2937;
+}
+
+.fond .telecharger {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #2563eb;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.fond .telecharger:hover {
+    background: #1d4ed8;
+}
+
+.apercu {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    inset: 0;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px 20px;
+    background: #111827ee;
+}
+
+.apercu:target {
+    display: flex;
+}
+
+.apercu img {
+    max-width: 90vw;
+    max-height: 80vh;
+    object-fit: contain;
+    border: 3px solid white;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px #00000088;
+}
+
+.fermer {
+    position: absolute;
+    top: 18px;
+    right: 28px;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@media (max-width: 800px) {
+    .galerie {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 520px) {
+    .galerie {
+        grid-template-columns: 1fr;
+    }
+}
